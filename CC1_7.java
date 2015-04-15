@@ -41,14 +41,14 @@ public class CC1_7 {
         Object[] colArr = colVec.toArray();
         
         for (int i = 0; i < rowArr.length; i++){
-            int row = (int)rowArr[i]; // Cast object to integer
+            int row = (int)rowArr[i];
             for (int j = 0; j < N; j++){
                 myMatrix[row][j] = 0;
             }
         }
         
         for (int i = 0; i < colArr.length; i++){
-            int col = (int)colArr[i]; // Cast object to integer
+            int col = (int)colArr[i];
             for (int j = 0; j < M; j++){
                 myMatrix[j][col] = 0;
             }
