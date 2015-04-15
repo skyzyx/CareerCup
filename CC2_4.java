@@ -46,8 +46,6 @@ public class CC2_4 {
             total_sum /= 10;
         }
         System.out.println(outputList);
-        
-        
 
     }
 }
