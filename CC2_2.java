@@ -8,7 +8,7 @@ import java.util.*;
 public class CC2_2 {
     public static void main (String[] args) {
         LinkedList myList = new LinkedList();
-        int nth = 3;
+        int nth = 4;
         
         char element = 'A';
         while (myList.size() < 26){
