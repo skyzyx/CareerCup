@@ -31,9 +31,8 @@ public class CC2_1 {
     
     public static LinkedList removeDupwithTempBuffer(LinkedList inputList){
         
-        if (inputList == null){
+        if (inputList == null)
             return null;
-        }
         
         if (inputList.size() < 2){
             return inputList;
