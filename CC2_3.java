@@ -11,8 +11,7 @@ import java.util.*;
 
 public class CC2_3 {
     public static void main (String[] args) {
-        LinkedList testList = new LinkedList(); // testList is an Empty list right now, before adding any element.
-        //LinkedList testList = null; // This statement shows the list is a null list, which is different with empty list.
+        LinkedList testList = new LinkedList();
         
         char element = 'a';
         while (testList.size() < 5){
@@ -26,12 +25,12 @@ public class CC2_3 {
     }
     
     public static void removeMiddle(LinkedList myList) {
-        if (myList == null) { // Null list case
+        if (myList == null) {
             System.out.println("List == null");
             return;
         }
         
-        if (myList.size() == 0) { // Empty list case
+        if (myList.size() == 0) {
             System.out.println("size == 0");
             return;
         }
