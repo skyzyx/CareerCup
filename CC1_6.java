@@ -22,7 +22,7 @@ public class CC1_6 {
         int[][] myMatrix = new int[N][N]; // NxN matrix
         int[][] myMatrix_Transpose = new int[N][N];
         
-        int k = 1;        
+        int k = 1; 
         for (int i=0; i < N; i++){ // Initialize the matrix
             for (int j=0; j < N; j++){
                 myMatrix[i][j] = k;
