@@ -26,14 +26,9 @@ public class CC1_4 {
         Arrays.sort(arrA);
         Arrays.sort(arrB); // Then I also can do Arrays.equals(arrA, arrB).
         
-        System.out.println(String.valueOf(arrA));
-        System.out.println(String.valueOf(arrB));
-        
         if (String.valueOf(arrA).equals(String.valueOf(arrB))) { // Do not write code like String.valueOf(arrA) == String.valueOf(arrB)
             return true;
         }
         return false;
     }
 }
-
-// http://www.programcreek.com/2014/03/create-java-string-by-double-quotes-vs-by-constructor/
