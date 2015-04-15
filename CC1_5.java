@@ -20,7 +20,7 @@ public class CC1_5 {
         String resStr = "";
         for (int i  = 0; i < myStr.length(); i++) {
             if (myStr.charAt(i) == ' ') {
-                resStr += "%20"; // '%20' does not work
+                resStr += "%20";
             } else {
                 resStr += myStr.charAt(i);
             }
