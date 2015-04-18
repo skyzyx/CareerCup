@@ -10,13 +10,13 @@ has same number of 1 bits. For the next smallest, keep decreasing 1.
 
 public class CC5_3 {
     public static void main (String[] args){
-        int data = 5; // 5 = 101
+        int data = 5;
         System.out.println(findNextSmallest(data));
         System.out.println(findNextLargest(data));
     }
     
     public static int findNextSmallest(int num){
-        int result = num - 1; // Can't do result = num
+        int result = num - 1;
         while (Integer.bitCount(result) != Integer.bitCount(num)){
             result--;
         }
@@ -24,7 +24,7 @@ public class CC5_3 {
     }
     
     public static int findNextLargest(int num){
-        int result = num + 1; // Can't do result = num
+        int result = num + 1;
         while (Integer.bitCount(result) != Integer.bitCount(num)){
             result++;
         }
