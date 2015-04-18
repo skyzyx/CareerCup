@@ -6,8 +6,8 @@ are swapped, etc).
 
 public class CC5_6 {
     public static void main(String[] args) {
-        int num = 10;
-        System.out.println(swapOddEvenBits(num));
+        System.out.println(swapOddEvenBits(10));
+        System.out.println(swapOddEvenBits(5));
     }
     
     // Mask the odd bits (keep the odd bits and turn off all the even bits).
