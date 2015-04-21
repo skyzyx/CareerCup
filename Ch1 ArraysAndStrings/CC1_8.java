@@ -8,34 +8,24 @@ rotation of <erbottlewat>).
 import java.util.*;
 
 public class CC1_8 {
-    public static void main (String[] args){
-        String test1 = "waterbottle";
-        String test2 = "erbottlewat";
-        String test2Out = "";
-        int temp = 0;
-        
-        for (int i = 0; i < test2.length(); i++){
-            if (test2.charAt(i) == test1.charAt(0)){
-                temp = i;
-            }
-        }
-        
-        for (int i = temp; i < test2.length(); i++){
-            test2Out += test2.charAt(i);
-        }
-        
-        for (int i = 0; i < temp; i++){
-            test2Out += test2.charAt(i);
-        }
-        
-        if (test1.length() != test2.length()){
-            System.out.println("They have different length.");
-        } else {
-            if (test1.compareTo(test2Out) != 0){
-                System.out.println("They are different.");
-            } else {
-                System.out.println("They are the same.");
-            }
-        }
+    public static boolean isRotated(String s1, String s2) {
+        if (s1 == null || s2 == null)
+            return false;
+
+        if (s1.length() != s2.length())
+            return false;
+
+        return isSubstring(s1+s2, s2);
+    }
+
+    public static boolean isSubstring(String str, String subStr) {
+        return str.contains(subStr);
+        // return str.indexOf(subStr) != -1;
+    }
+
+    public static void main(String[] args) {
+        String s1 = "waterbottle";
+        String s2 = "erbottlewat";
+        System.out.println(isRotated(args[0], args[1]));
     }
 }
