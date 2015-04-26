@@ -3,7 +3,7 @@ CC9.5: Write a method to computer all permutations of a string of unique charact
 */
 import java.util.*;
 
-public class CC9_4 {
+public class CC9_5 {
     public static void main(String[] args) {
         String myStr = "abb";        
         System.out.println(findPermutation(myStr));
