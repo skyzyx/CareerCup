@@ -10,9 +10,8 @@ public class CC9_5 {
     }
     
     public static ArrayList<String> findPermutation(String s) {
-        if (s == null) {
+        if (s == null)
             return null;
-        }
         
         ArrayList<String> resList = new ArrayList<String>();
         if (s.length() < 2) {
