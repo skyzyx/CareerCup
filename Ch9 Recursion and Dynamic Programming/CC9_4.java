@@ -1,9 +1,6 @@
 /*
-CC9.4: Write a method to compute all permutations of a string.
+CC9.5: Write a method to computer all permutations of a string of unique characters.
 */
-
-// http://www.ardendertat.com/2011/10/28/programming-interview-questions-11-all-permutations-of-string/
-
 import java.util.*;
 
 public class CC9_4 {
@@ -28,7 +25,7 @@ public class CC9_4 {
         ArrayList<String> words = findPermutation(remainder);
         
         for (String word : words) {
-            for (int i = 0; i <= word.length(); i++) { // i <= word.length(), not i < word.length(), check class insertCharAtPosition()
+            for (int i = 0; i <= word.length(); i++) {
                 if (!resList.contains(insertCharAtPosition(word, first, i))){
                     resList.add(insertCharAtPosition(word, first, i));
                 }
